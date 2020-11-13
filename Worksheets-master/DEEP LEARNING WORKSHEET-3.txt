@@ -1,0 +1,154 @@
+				WORKSHEET
+			DEEP LEARNING – WORKSHEET 3
+
+
+Q1 to Q8 are MCQs with only one correct answer. Choose the correct option.
+1. Which of the following is true about model capacity (where model capacity means the ability of neural
+network to approximate complex functions)?
+A) As dropout ratio increases, model capacity increases
+B) As number of hidden layers increase, model capacity increases
+C) As learning rate increases, model capacity increases
+D) None of the above
+Answer:- B) As number of hidden layers increase, model capacity increases
+
+
+
+
+
+2. Batch Normalization is helpful because?
+A) It is a very efficient backpropagation technique
+B) It returns back the normalized mean and standard deviation of weights
+C) It normalizes (changes) all the input before sending it to the next layer
+D) None of the above
+Answer:-  C) It normalizes (changes) all the input before sending it to the next layer
+
+
+
+
+
+3. What if we use a learning rate that’s too large?
+A) Network will not converge B) Network will converge
+C) either A or B D) None of the above
+Answer:- B) Network will converge
+
+
+
+
+
+4. What are the factors to select the depth of neural network?
+i) Type of neural network (e.g. MLP, CNN etc.)
+ii) Input data
+iii) Computation power, i.e. Hardware capabilities and software capabilities
+iv) Learning Rate
+v) The output function to map
+A) 1, 2, 4, 5 B) 2, 3, 4, 5
+C) 1, 3, 4, 5 D) All of these
+Answer:- D) All of these
+
+
+
+
+
+5. Suppose you have inputs as x, y, and z with values -2, 5, and -4 respectively. You have a neuron ‘q’ and
+neuron ‘f’ with functions:
+q = x + y
+f = q * z
+Graphical representation of the functions is as follows:
+What is the gradient of F with respect to x, y, and z? (use chain rule of derivatives to find the solution)
+A) (3, -4, -4) B) (-3, 4, 4)
+C) (-4, -4, 3) D) (4, 4, 3)
+Answer:- A) (3, -4, -4)
+
+
+
+
+
+6. Which of the following statement is the best description of early stopping?
+A) Train the network until a local minimum in the error function is reached
+B) Simulate the network on a test dataset after every epoch of training. Stop training when the generalization
+ error starts to increase
+C) Add a momentum term to the weight update in the Generalized Delta Rule, so that training converges more
+ quickly
+D) None of the above
+Answer:- A) Train the network until a local minimum in the error function is reached
+
+
+
+
+
+7. Which gradient descent technique is more advantageous when the data is too big to handle in RAM
+simultaneously?
+A) Mini Batch Gradient Descent B) Stochastic Gradient Descent
+C) Full Batch Gradient Descent D) either A or B
+Answer:- B) Stochastic Gradient Descent
+
+
+
+
+
+8. Consider the scenario. The problem you are trying to solve has a small amount of data. Fortunately, you have a
+pre-trained neural network that was trained on a similar problem. Which of the following methodologies would
+you choose to make use of this pre-trained network?
+A) Freeze all the layers except the last, re-train the last layer
+B) Assess on every layer how the model performs and only select a few of them
+C) Fine tune the last couple of layers only
+D) Re-train the model for the new dataset
+Answer:- B) Assess on every layer how the model performs and only select a few of them
+
+
+
+
+Q9 and Q10 are MCQs with one or more correct answers. Choose all the correct options.
+9. Which of the following neural network training challenge can be solved using batch normalization?
+A) Overfitting B) Training is too slow
+C) Restrict activations to become too high or low
+D) None of these
+Answer:-  C) Restrict activations to become too high or low
+
+
+
+
+10. For a binary classification problem, which of the following activations may be used in output layer?
+A) ReLU B) sigmoid
+C) softmax D) Leaky ReLU
+Answer:- A) ReLU
+
+
+
+
+Q11 to Q15 are subjective answer type question. Answer them briefly.
+11. What will happen if we do not use activation function in artificial neural networks?
+Answer:- Although linear transformations make the neural network simpler, but this network would be less powerful and will not be able to learn the complex patterns from the data. A neural network without an activation function is essentially just a linear regression model.
+
+
+
+12. How does forward propagation and backpropagation work in deep learning?
+Answer:- 
+
+
+
+
+13. Explain briefly the following variant of Gradient Descent: Stochastic, Batch, and Mini-batch?
+Answer:- Forward propagation (or forward pass) refers to the calculation and storage of intermediate variables (including outputs) for a neural network in order from the input layer to the output layer. We now work step-by-step through the mechanics of a neural network with one hidden layer. 
+	 Backpropagation refers to the method of calculating the gradient of neural network parameters. In short, the method traverses the network in reverse order, from the output to the input layer, according to the chain rule from calculus. The algorithm stores any intermediate variables (partial derivatives) required while calculating the gradient with respect to some parameters. Assume that we have functions  Y=f(X)  and  Z=g(Y) , in which the input and the output  X,Y,Z  are tensors of arbitrary shapes. By using the chain rule, we can compute the derivative of  Z  with respect to  X  via
+		=> ∂Z/∂X=prod(∂Z/∂Y,∂Y/∂X).
+
+
+
+14. What are the main benefits of Mini-batch Gradient Descent?
+Answer:- 1).Easily fits in the memory.
+	 2).It is computationally efficient.
+	 3).Benefit from vectorization.
+	 4).If stuck in local minimums, some noisy steps can lead the way out of them.
+	 5).Average of the training samples produces stable error gradients and convergence.
+
+
+
+
+15. What is transfer learning?
+Answer:- Transfer learning is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem. For example, knowledge gained while learning to recognize cars could apply when trying to recognize trucks.
+
+
+
+
+

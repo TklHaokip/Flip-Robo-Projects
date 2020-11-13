@@ -1,0 +1,136 @@
+			 WORKSHEET
+		MACHINE LEARNING – WORKSHEET 4
+
+
+In Q1 to Q8, only one option is correct, Choose the correct option:
+1. Which of the following in sklearn library is used for hyper parameter tuning?
+A) GridSearchCV() B) RandomizedCV()
+C) K-fold Cross Validation D) None of the above
+Answer:- A) GridSearchCV()
+
+
+
+
+2. In which of the below ensemble techniques trees are trained in parallel?
+A) Random forest B) Adaboost
+C) Gradient Boosting D) All of the above
+Answer:- A) Random forest
+
+
+
+
+3. In machine learning, if in the below line of code:
+ sklearn.svm.SVC (C=1.0, kernel='rbf', degree=3)
+we increasing the C hyper parameter, what will happen?
+A) The regularization will increase B) The regularization will decrease
+C) No effect on regularization D) kernel will be changed to linear
+Answer:- B) The regularization will decrease
+
+
+
+
+4. Check the below line of code and answer the following questions:
+ sklearn.tree.DecisionTreeClassifier(*, criterion='gini', splitter='best', max_depth=None,
+min_samples_split=2)
+Which of the following is true regarding max_depth hyper parameter?
+A) It regularizes the decision tree by limiting the maximum depth up to which a tree can be grown.
+B) It denotes the number of children a node can have.
+C) both A & B
+D) None of the above
+Answer:- D) None of the above
+
+
+
+
+5. Which of the following is true regarding Random Forests?
+A) It's an ensemble of weak learners.
+B) The component trees are trained in series
+C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the
+component trees.
+D)None of the above
+Answer:- C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the
+component trees.
+
+
+
+
+6. What can be the disadvantage if the learning rate is very high in gradient descent?
+A) Gradient Descent algorithm can diverge from the optimal solution.
+B) Gradient Descent algorithm can keep oscillating around the optimal solution and may not settle.
+C) Both of them
+D)None of them.
+Answer:- A) Gradient Descent algorithm can diverge from the optimal solution.
+
+
+
+
+7. As the model complexity increases, what will happen?
+A) Bias will increase, Variance decrease B) Bias will decrease, Variance increase
+C)both bias and variance increase D) Both bias and variance decrease.
+Answer:- C)both bias and variance increase
+
+
+
+
+
+8. Suppose I have a linear regression model which is performing as follows:
+ Train accuracy=0.95
+ Test accuracy=0.75
+Which of the following is true regarding the model?
+A) model is underfitting B) model is overfitting
+C) model is performing good D) None of the above
+Answer:- B) model is overfitting
+
+
+
+
+
+Q9 to Q15 are subjective answer type questions, Answer them briefly.
+9. Suppose we have a dataset which have two classes A and B. The percentage of class A is 40% and
+percentage of class B is 60%. Calculate the Gini index and entropy of the dataset.
+Answer:-    
+
+
+
+
+
+10. What are the advantages of Random Forests over Decision Tree?
+Answer:- random forests are a strong modeling technique and much more robust than a single decision tree. They aggregate many decision trees to limit overfitting as well as error due to bias.
+
+
+
+
+
+11. What is the need of scaling all numerical features in a dataset? Name any two techniques used for scaling.
+Answer:- feature scaling is needed to bring every feature in the same footing ... when it uses the numeric values of the features rather than their rank. The two techniques used for scaling are a)Standardization & b)Normalization.
+
+
+
+
+12. Write down some advantages which scaling provides in optimization using gradient descent algorithm.
+Answer:- The main advantages: We can use fixed learning rate during training without worrying about learning rate decay. It has straight trajectory towards the minimum and it is guaranteed to converge in theory to the global minimum if the loss function is convex and to a local minimum if the loss function is not convex.
+
+
+
+
+13. In case of a highly imbalanced dataset for a classification problem, is accuracy a good metric to measure the
+performance of the model. If not, why?
+Answer:-  If you choose the wrong metric to evaluate your models, you are likely ... The main problem of imbalanced data sets lies on the fact that they are ... The reason is, a high accuracy (or low error) is achievable by a no skill model that only ... This is often the case, but when it is not the case, the performance can
+
+
+
+
+14. What is “f-score" metric? Write its mathematical formula.
+Answer:- It is calculated from the precision and recall of the test, where the precision is the number of correctly identified positive results divided by the number of all positive results, including those not identified correctly, and the recall is the number of correctly identified positive results divided by the number.
+
+
+
+
+15. What is the difference between fit(), transform() and fit_transform()?
+Answer:- The fit() function calculates the values of these parameters. The transform function applies the values of the parameters on the actual data and gives the normalized value. The fit_transform() function performs both in the same step. Note that the same value is got whether we perform in 2 steps or in a single step.
+
+
+
+
+
+

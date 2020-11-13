@@ -1,0 +1,146 @@
+			MACHINE LEARNING
+			   WORKSHEET–2
+
+
+
+In Q1 to Q5, only one option is correct, Choose the correct option:
+1. In which of the following you can say that the model is overfitting?
+A) High R-squared value for train-set and High R-squared value for test-set.
+B) Low R-squared value for train-set and High R-squared value for test-set.
+C) High R-squared value for train-set and Low R-squared value for test-set.
+D) None of the above
+Answer:- A) High R-squared value for train-set and High R-squared value for test-set.
+
+
+
+
+2. Which among the following is a disadvantage of decision trees?
+ A) Decision trees are prone to outliers.
+B) Decision trees are highly prone to overfitting.
+C) Decision trees are not easy to interpret
+D) None of the above.
+Answer:- B) Decision trees are highly prone to overfitting.
+
+
+
+
+
+3. Which of the following is an ensemble technique?
+ A) SVM B) Logistic Regression
+C) Random Forest D) Decision tree
+Answer:- C) Random Forest
+
+
+
+
+4. Suppose you are building a classification model for detection of a fatal disease where detection of the disease is most
+important. In this case which of the following metrics you would focus on?
+A) Accuracy B) Sensitivity
+C) Precision D) None of the above.
+Answer:- B) Sensitivity
+
+
+
+
+
+5. The value of AUC (Area under Curve) value for ROC curve of model A is 0.70 and of model B is 0.85. Which of these two
+models is doing better job in classification?
+A) Model A B) Model B
+C) both are performing equal D) Data Insufficient
+Answer:- B) Model B
+
+
+
+
+
+In Q6 to Q9, more than one options are correct, Choose all the correct options:
+6. Which of the following are the regularization technique in Linear Regression??
+A) Ridge B) R-squared
+ C) MSE D) Lasso
+Answer:- A) Ridge &
+	 D) Lasso
+
+
+
+
+7. Which of the following is not an example of boosting technique?
+ A) Adaboost B) Decision Tree
+C) Random Forest D) Xgboost.
+Answer:- B) Decision Tree
+
+
+
+
+8. Which of the techniques are used for regularization of Decision Trees?
+A) Pruning B) L2 regularization
+C) Restricting the max depth of the tree D) All of the above
+Answer:- D) All of the above
+
+
+
+
+9. Which of the following statements is true regarding the Adaboost technique?
+A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points
+B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well
+C) It is example of bagging technique
+D) None of the above
+Answer:- A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points
+	 B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well
+	 C) It is example of bagging technique
+
+
+
+
+Q10 to Q15 are subjective answer type questions, Answer them briefly.
+10. Explain how does the adjusted R-squared penalize the presence of unnecessary predictors in the model?
+Answer:- The adjusted R 2 "penalizes" you for adding the extra predictor variables that don't improve the existing model. It can be helpful in model selection. Adjusted R 2 will equal R 2 for one predictor variable. As you add variables, it will be smaller than R 2.
+
+
+
+
+11. Differentiate between Ridge and Lasso Regression.
+Answer:- Ridge Regression: In L1 regularization, we penalize the absolute value of the weights while in L2 regularization, we penalize the squared value of the weights.
+Lasso Regression: In L1 regularization, we can shrink the parameters to zero while in L2 regularization, we can shrink the parameters to as small as possible but not to zero. So, L1 can simply discard the useless features in the dataset and make it simple.
+
+
+
+
+
+12. What is VIF? What is the suitable value of a VIF for a feature to be included in a regression modelling?
+Answer:- the quotient of the variance in a model with multiple terms by the variance of a model with one term alone. It quantifies the severity of multicollinearity in an ordinary least squares regression analysis. It provides an index that measures how much the variance (the square of the estimate's standard deviation) of an estimated regression coefficient is increased because of collinearity.
+The Variance Inflation Factor (VIF) measures the impact of collinearity among the variables in a regression model. The Variance Inflation Factor (VIF) is 1/Tolerance, it is always greater than or equal to 1. There is no formal VIF value for determining presence of multicollinearity. Values of VIF that exceed 10 are often regarded as indicating multicollinearity, but in weaker models values above 2.5 may be a cause for concern. In many statistics programs, the results are shown both as an individual R2 value (distinct from the overall R2 of the model) and a Variance Inflation Factor (VIF). When those R2 and VIF values are high for any of the variables in your model, multicollinearity is probably an issue. When VIF is high there is high multicollinearity and instability of the b and beta coefficients.
+1.Examine the correlations, 2.Regression coefficients 3. The standard errors of the regression coefficients will be large if multicollinearity is an issue.
+
+
+
+
+
+13. Why do we need to scale the data before feeding it to the train the model?
+Answer:- Given the use of small weights in the model and the use of error between predictions and expected values, the scale of inputs and outputs used to train the model are an important factor.We only use transform()on the test data because we use the scaling paramaters learned on the train data to scale the test data. This is the standart procedure to scale. You always learn your scaling parameters on the train and then use them on the test.
+
+
+
+
+
+
+14. What are the different metrics which are used to check the goodness of fit in linear regression?
+Answer:- Five metrics give us some hints about the goodness-of-fit of our model. The first two metrics, the Mean Absolute Error and the Root Mean Squared Error (also called Standard Error of the Regression), have the same unit as the original data.These metrics can be used to compare models having the error e measured in the same units. MAE is simpler to understand, since it describes the average error. RMSE is not as intuitive as the other metric. It should be used when large errors are not allowed, because they are squared and then averaged.
+
+
+
+
+15. From the following confusion matrix calculate sensitivity, specificity, precision, recall and accuracy.
+			Predicted 
+			True 	False
+		True 	1000 	50
+	 Actual	
+		False 	250 	1200
+
+Answer:- Sensitivity: 0.95% 
+	 Specificity: 0.82%
+	 Precision :  0.80%
+	 Accuracy  :  0.88%
+
+
+
+

@@ -1,0 +1,154 @@
+                                        ASSIGNMENT-MACHINE LEARNING WORKSHEET-1
+                             Please find Machine learning Worksheet 1 attached to this comment.
+                         Kindly answer all the questions in a text file and upload it on your github.
+
+
+
+Q1. The value of correlation coefficient will always be:
+    A) between 0 and 1 B) greater than -1
+    C) between -1 and 1 D) between 0 and -1
+Answer:- C)between -1 and 1.
+
+
+
+
+Q2. Which of the following cannot be used for dimensionality reduction?
+    A) Lasso Regularisation B) PCA
+    C) Recursive feature elimination D) Ridge Regularisation
+Answer:- C) Recursive feature elimination
+
+
+
+
+Q3. Which of the following is not a kernel in Support Vector Machines?
+    A) linear B) Radial Basis Function
+    C) hyperplane D) polynomial
+Answer:- C) hyperplane
+
+
+
+
+Q4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+    A) Logistic Regression B) Naïve Bayes Classifier
+    C) Decision Tree Classifier D) Support Vector Classifier
+Answer:- A) Logistic Regression 
+
+
+
+
+Q5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents
+    weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+    (1 kilogram = 2.205 pounds)
+    A) 2.205 × old coefficient of ‘X’ B) same as old coefficient of ‘X’
+    C) old coefficient of ‘X’ ÷ 2.205 D) Cannot be determined
+Answer:- C) old coefficient of ‘X’ ÷ 2.205
+
+
+
+
+Q6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+    A) remains same B) increases
+    C) decreases D) none of the above
+Answer:- B) increases
+
+
+
+
+Q7. Which of the following is not an advantage of using random forest instead of decision trees?
+    A) Random Forests reduce overfitting
+    B) Random Forests explains more variance in data then decision trees
+    C) Random Forests are easy to interpret
+    D) Random Forests provide a reliable feature importance estimate
+Answer:- C) Random Forests are easy to interpret
+
+
+
+
+Q8. Which of the following are correct about Principal Components?
+    A) Principal Components are calculated using supervised learning techniques
+    B) Principal Components are calculated using unsupervised learning techniques
+    C) Principal Components are linear combinations of Linear Variables.
+    D) All of the above
+Answer:- B) Principal Components are calculated using unsupervised learning techniques &
+            C) Principal Components are linear combinations of Linear Variables.
+            
+
+
+
+Q9. Which of the following are applications of clustering?
+       A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty
+            index, employment rate, population and living index
+       B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts.
+       C) Identifying spam or ham emails
+       D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels
+Answer:- A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty
+            index, employment rate, population and living index
+            B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts and 
+            D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels
+            
+
+
+
+Q10. Which of the following is(are) hyper parameters of a decision tree?
+    A) max_depth      B) max_features
+    C) n_estimators   D) min_samples_leaf
+Answer:- A) max_depth &
+         D) min_samples_leaf
+             
+
+
+
+
+Q11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection.
+Answer:- OUTLIERS: In statistics, an outlier is a data point that differs significantly from other observations. An outlier may be due                to variability in the measurement or it may indicate experimental error.
+                        
+        INTER QUARTILE RANGE(IQR) METHOD: The IQR is simply the difference between 75th & 25th percentile.where,
+             Q1 represents the 25th percentile of the data.
+             Q2 represents the 50th percentile of the data.
+             Q3 represents the 75th percentile of the data.
+             If a dataset has 2n / 2n+1 data points, then
+              Q1 = median of the dataset.
+              Q2 = median of n smallest data points.
+              Q3 = median of n highest data points.
+             IQR is the range between the first and the third quartiles namely Q1 and Q3: IQR = Q3 – Q1. 
+             The data points which fall below Q1 – 1.5 IQR or above Q3 + 1.5 IQR are outliers.
+             
+
+
+
+
+Q12. What is the primary difference between bagging and boosting algorithms?
+Answer:-  BAGGING: Bagging is a way to decrease the variance in the prediction by generating additional data for training from dataset                          using combinations with repetitions to produce multi-sets of the original data.
+
+          BOOSTING: An iterative technique which adjusts the weight of an observation based on the last classification.
+          
+
+
+
+
+Q13.What is adjusted R2 in logistic regression. How is it calculated?
+Answer:- ADJUSTED R2: A statistical measure in a regression model that determines the proportion of variance in the dependent, is used to                       explain the degree to which input variables (predictor variables) explain the variation of output variables (predicted                       variables). It ranges from 0 to 1.It is calculated by using the formula: R2 = SSregression/SStotal
+                    Where:
+                        SSregression is the sum of squares due to regression (explained sum of squares)
+                        SStotal is the total sum of squares.
+                        
+
+
+
+Q14. What is the difference between standardisation and normalisation?
+Answer:- STANDARDISATION: Standardization typically means that the range of values are standardized to measure how many standard                                  deviations the value is from its mean and 
+         NORMALISATION: normalization typically means that the range of values are normalized to be from 0.0 to 1.0.
+         
+
+
+
+
+Q15. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
+Answer:- CROSS VALIDATION: A cross-validation model validation techniques for assessing how the results of a statistical analysis will                                  generalize to an independent data set.
+        
+     Advantages of Cross Validation:
+1. Reduces Overfitting: In Cross Validation, we split the dataset into multiple folds and train the algorithm on different folds. This prevents our model from overfitting the training dataset. So, in this way, the model attains the generalization capabilities which is a good sign of a robust algorithm.
+
+Disadvantages of Cross Validation:
+1. Increases Training Time: Cross Validation drastically increases the training time. Earlier you had to train your model only on one training set, but with Cross Validation you have to train your model on multiple training sets. 
+              

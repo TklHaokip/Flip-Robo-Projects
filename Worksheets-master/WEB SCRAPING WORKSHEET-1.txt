@@ -1,0 +1,182 @@
+			WEB SCRAPING
+			WORKSHEET – 1
+
+In Q1 to Q9, only one option is correct, Choose the correct option:
+Q1.Which of the following extracts information from user generated content?
+A) Java script tagging			B) Web scraping
+C) A/B testing				D) MROCs
+Answer:- B) Web Scraping
+
+
+
+Q2.Which of the following is not a web scraping library in python?
+A) selenium				B) Beautiful soup
+C) Requests				C) scrapy
+Answer:- None of the Above.
+
+
+
+Q3.Selenium tests __________?
+A) Browser based applications		B) DOS applications
+C) GUI applications			D) All of the above
+Answer:- A) Browser based applications 
+
+
+
+Q4.Task of crawling is performed by a complex software which is known as:
+A) Scraper				B) Crawler
+C) Boat					D) Spider
+Answer:- D) Spider
+
+
+
+Q5.Which of the following commands is used to access name of a tag in Beautiful Soup?
+A) tag.attrs				B) tag.name
+C) tag,id				C) tag[‘id’]
+Answer:- B) tag.name
+
+
+
+Q6.Which of the following is the default parser in Beautiful Soup?
+A) html.parser				B) html5lib
+C) lxml					D) lxml-xml
+Answer:- C) lxml
+
+
+
+Q7.In selenium the webdriver is used to?
+A) design a test using selenese
+B) test a web application on firefox only
+C) execute tests on HtmlUnit browser
+D) to download any content from a webpage
+Answer:- C) Execute tests on HtmlUnit browser
+
+
+
+Q8.In selenium, driver.find_elements_by_xpath(‘given xpath’) returns:
+A) the first webelement associated with the ‘given xpath’
+B) the url of first webelement associated with the ‘given xpath’
+C) the list of all webelements associated with the ‘given xpath’
+D) all the attributes of the first webelement associated with the ‘given xpath’
+Answer:-A) The first webelement associated with the  ‘given xpath’
+
+
+
+Q9.The script ‘window.scrollBy(0,a) scrolls the webpage by?
+A) ‘a’ number of horizontal spaces
+B) ‘a’ number of lines
+C) ‘a’ number of pixels horizontally
+D) ‘a’ number of pixels vertically
+Answer:- D) ‘a’  number of pixels vertically
+
+
+
+In Q10, more than one options are correct, Choose all the correct options:
+Which of the following is(are) tags of HTML?
+A) <a>					B) <b>
+C) <image>				D) <href>
+Answer:- A) <a> 
+	 B) <b> &
+	 C) <href>
+
+
+
+
+Q11 to Q13 are subjective answer type questions, Answer them briefly:
+Q11.What is the main difference between a web scraper and a web crawler?
+Answer:- WEB SCRAPER: 
+a) A web scraper's main purpose is to extract data from webpages
+b) Often have the ability to browse to different pages and follow links.
+c) Though web scrapers can crawl to different pages their primary purpose is scraping the data on those pages, not indexing the web.
+
+	WEB CRAWLER:
+a) Web crawlers work by browsing to a series of webpages and analyzing their contents for links to other webpages
+b) The links to the other webpages are then followed and searched for more links. 
+c) The process of following and recording these links is referred to as “crawling.”
+
+
+
+Q12.What is ‘robots.txt’ file? What is the use of ‘robots.txt’ file?
+Answer:- ‘Robots.txt’  is a text file webmasters create to instruct web robots 
+Index content so that it can served up the search the searchers.The syntax can be though of as "Language".
+	APPLICATIONS:
+Used to give instructions to web robots,such as search engine crawlers, about locations within the web site that robots are allowed, or not allowed, to crawl and index. 
+
+
+
+Q13.What are static and dynamic web pages?
+Answer:-Static Website:
+A static website includes a series of HTML and CSS files where each HTML file represents a web page of the website. In static sites, the format and number of pages are fixed which offers fixed information to the client. Even though two webpages of the site consist of same content such as header or footer, both webpages would have two different versions of the same. So, in order to make changes in the header or footer section, you need to make the changes in both the files manually.
+This is how sites were created in the early days of the internet.
+
+Dynamic website:
+Dynamic websites use server technologies to create web page dynamically when someone visits the page. When a user visits a certain web address, the server looks into the bunch of variety of pieces of information to write a single united webpage which is then displayed to the user. In a nutshell, dynamic websites can change the webpage dynamically while the user is accessing the page on the browser. Server-side programming (JSP, ASP.net, PHP) is used to change page’s content at run time.
+
+
+Q14 and Q15 are programming practice questions. Solve it using JUPYTER NOTEBOOK and paste the solution in your answer sheets.
+Q14.Write a python program to check whether a webpage contains a title or not.
+Answer:-   ##From W3 Schools##
+from urllib.request import urlopen
+from urllib.error import HTTPError
+from bs4 import BeautifulSoup
+def getTitle(url):
+    try:
+        html = urlopen(url)
+    except HTTPError as e:
+        return None
+    try:
+        bsObj = BeautifulSoup(html.read(), "lxml")
+        title = bsObj.body.h1
+    except AttributeError as e:
+        return None
+    return title
+    
+    title = getTitle(url)
+    if title == None:
+        return "Title could not be found"
+    else:
+        return title
+
+print(getTitle("https://www.w3resource.com/"))
+print(getTitle("http://www.example.com/"))
+
+
+
+
+Q15.Write a python program to access the search bar and search button on images.google.com.
+Answer:- ##Performing google search using Python Code##
+class Gsearch_python:
+    def __init__(self,name_search):
+        self.name = name_search
+    def Gsearch(self):
+        count = 0
+        try :
+            from googlesearch import search
+        except ImportError:
+            print("No Module named'google' Found")
+        for i in search(query=self.name,tld='co.in',lang='en',num=10,stop=5,pause=2):
+            count +=1
+            print(count)
+            print(i + '\n')
+if __name__=='__main__':
+    gs = Gsearch_python("image.google.com")
+    gs.Gsearch()
+
+
+BELOW IS THE OUTPUT:
+1
+https://www.pcmag.com/how-to/how-to-do-a-reverse-image-search-from-your-phone
+
+2
+https://tineye.com/
+
+3
+https://www.popularmechanics.com/technology/a25226475/how-to-do-a-reverse-image-search/
+
+4
+https://en.wikipedia.org/wiki/Google_Images
+
+5
+https://www.androidauthority.com/how-to-google-reverse-image-search-800391/
+
+​

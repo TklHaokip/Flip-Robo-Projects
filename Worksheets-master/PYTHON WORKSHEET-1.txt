@@ -1,0 +1,208 @@
+			WORKSHEET-1
+			  PYTHON
+
+
+
+Q1 to Q8 have only one correct answer. Choose the correct option to answer your question.
+1. Which of the following operators is used to calculate remainder in a division?
+A) # B) &
+C) % D) $
+Answer:- C) %
+
+
+
+
+
+2. In python 2//3 is equal to?
+A) 0.666 B) 0
+C) 1 D) 0.67
+Answer:- B) 0
+
+
+
+
+
+3. In python, 6<<2 is equal to?
+A) 36 B) 10
+C) 24 D) 45
+Answer:- C) 24
+
+
+
+
+
+4. In python, 6&2 will give which of the following as output?
+A) 2 B) True
+C) False D) 0
+Answer:- A) 2
+
+
+
+
+
+5. In python, 6|2 will give which of the following as output?
+A) 2 B) 4
+C) 0 D) 16
+Answer:- A) 2
+
+
+
+
+
+6. What does the finally keyword denotes in python?
+A) It is used to mark the end of the code
+B) It encloses the lines of code which will be executed if any error occurs while executing the lines of code in the
+ try block.
+C) the finally block will be executed no matter if the try block raises an error or not.
+D) None of the above
+Answer:- A) It is used to mark the end of the code
+
+
+
+
+
+7. What does raise keyword is used for in python?
+A) It is used to raise an exception. B) It is used to define lambda function
+C) it's not a keyword in python. D) None of the above
+Answer:- A) It is used to raise an exception.
+
+
+
+
+
+8. Which of the following is a common use case of yield keyword in python?
+A) in defining an iterator B) while defining a lambda function
+C) in defining a generator D) in for loop.
+Answer:- C) in defining a generator
+
+
+
+
+
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+9. Which of the following are the valid variable names?
+A) _abc B) 1abc
+C) abc2 D) None of the above
+Answer:- A) _abc
+	 C) abc2
+
+
+
+
+10. Which of the following are the keywords in python?
+A) yield B) raise
+C) look-in D) all of the above
+Answer:- A) yield 
+	 B) raise
+
+
+
+
+
+Q11 to Q15 are programming questions. Answer them in Jupyter Notebook.
+11. Write a python program to find the factorial of a number.
+Answer:-  Python programme to find the factorial of a number provided by the user¶
+
+# To take input from the user
+number =int(input('enter the number :'))
+factorial = 1
+
+# Check if the number is positive,negative or zero
+if number < 0:
+    print('sorry, the factorial does not exist for negative numbers')
+elif number == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,number+1):
+        factorial = factorial*i
+    print('The factorial of',number,'is',factorial)
+
+
+
+
+
+12. Write a python program to find whether a number is prime or composite.
+Answer:- Python program to check if the input number is prime or not
+
+
+#Take input from the user
+num = int(input("Please enter the number: "))
+#Check if the given number is greater than 1
+if num > 1:
+   # Iterate through 2 to num/2.
+    for i in range(2,num//2):
+      #Select if the number is divisible by any number between 2 and num/2.
+        if (num % i) == 0:
+            print(num,"is not a prime number")
+            print(i,"times",num//i,"is",num)
+            break
+    else:
+         #If given number is not fully divisible by any number between 1 and num/2, then its prime.
+        print(num,"is a prime number")
+# Also, if the number is less than 1, its also not a prime number.
+else:
+    print(num,"is not a prime number")
+
+
+
+
+
+13. Write a python program to check whether a given string is palindrome or not.
+Answer:- ALGORITHM:
+	 Step1: Enter string as an input.
+	Step2: Using string slicing we reverse the string and compare it back to the original string.
+	Step3: Then display the result
+ 
+# CODE
+my_string=input("Enter string:")
+if(my_string==my_string[::-1]):
+   print("The string is a palindrome")
+else:
+   print("The string isn't a palindrome")
+
+
+
+
+14. Write a Python program to get the third side of right-angled triangle from two given sides.
+Answer:- Python program to get the third side of right-angled triangle from two given sides
+
+def pythagoras(opposite_side,adjacent_side,hypotenuse):
+        if opposite_side == str("x"):
+            return ("Opposite = " + str(((hypotenuse**2) - (adjacent_side**2))**0.5))
+        elif adjacent_side == str("x"):
+            return ("Adjacent = " + str(((hypotenuse**2) - (opposite_side**2))**0.5))
+        elif hypotenuse == str("x"):
+            return ("Hypotenuse = " + str(((opposite_side**2) + (adjacent_side**2))**0.5))
+        else:
+            return "You know the answer!"
+    
+print(pythagoras(3,4,'x'))
+print(pythagoras(3,'x',5))
+print(pythagoras('x',4,5))
+print(pythagoras(3,4,5))
+
+
+
+
+15. Write a python program to print the frequency of each of the characters present in a given string.
+Answer:- # Python3 code to demonstrate each occurrence frequency using naive method  
+  
+# initializing string  
+test_str = "GeeksforGeeks"
+  
+# using naive method to get count of each element in string  
+all_freq = {} 
+  
+for i in test_str: 
+    if i in all_freq: 
+        all_freq[i] += 1
+    else: 
+        all_freq[i] = 1
+  # printing result  
+print ("Count of all characters in GeeksforGeeks is :\n "
+                                        +  str(all_freq))
+
+
+
+
+

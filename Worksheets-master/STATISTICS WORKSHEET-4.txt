@@ -1,0 +1,154 @@
+			WORKSHEET
+		 Statistics– WORKSHEET 4
+
+
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question.
+1. Bernoulli random variables take (only) the values 1 and 0.
+a) True
+b) False
+Answer:- a) True
+
+
+
+
+
+2. Which of the following theorem states that the distribution of averages of iid variables, properly
+normalized, becomes that of a standard normal as the sample size increases?
+a) Central Limit Theorem
+b) Central Mean Theorem
+c) Centroid Limit Theorem
+d) All of the mentioned
+Answer:- a) Central Limit Theorem
+
+
+
+
+
+3. Which of the following is incorrect with respect to use of Poisson distribution?
+a) Modeling event/time data
+b) Modeling bounded count data
+c) Modeling contingency tables
+d) All of the mentioned
+Answer:- c) Modeling contingency tables
+
+
+
+
+
+4. Point out the correct statement.
+a) The exponent of a normally distributed random variables follows what is called the lognormal distribution
+b) Sums of normally distributed random variables are again normally distributed even if the
+variables are dependent
+c) The square of a standard normal random variable follows what is called chi-squared
+distribution
+d) All of the mentioned
+Answer:- d) All of the mentioned
+
+
+
+
+
+5. __________ random variables are used to model rates.
+a) Empirical
+b) Binomial
+c) Poisson
+d) All of the mentioned
+Answer:- c) Poisson
+
+
+
+
+
+6. 10. Usually replacing the standard error by its estimated value does change the CLT.
+a) True
+b) False
+Answer:- b) False
+
+
+
+
+
+7. 1. Which of the following testing is concerned with making decisions using data?
+a) Probability
+b) Hypothesis
+c) Causal
+d) None of the mentioned
+Answer:- b) Hypothesis
+
+
+
+
+
+8. 4. Normalized data are centered at ___ and have units equal to standard deviations of the
+original data.
+a) 0
+b) 5
+c) 1
+d) 10
+Answer:- a) 0
+
+
+
+
+
+9. Which of the following statement is incorrect with
+respect to outliers?
+a) Outliers can have varying degrees of influence
+b) Outliers can be the result of spurious or real processes
+c) Outliers cannot conform to the regression relationship
+d) None of the mentioned
+Answer:- c) Outliers cannot conform to the regression relationship
+
+
+
+
+
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly.
+10. What do you understand by the term Normal Distribution?
+Answer:- Normal distribution, also known as the Gaussian distribution, is a probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve
+
+
+
+
+11. How do you handle missing data? What imputation techniques do you recommend?
+Answer:- 1.Ignore the records with missing values
+	 2. Substitute a value such as mean.
+	 3. Predict missing values such as 
+		-Logistic Regression
+		-Discriminant Regression
+		-Markov Chain Monte Carlo(MCMC)
+
+	 4. statistical assumptions
+
+	 5. What to report.
+
+
+
+
+12. What is A/B testing
+Answer:- A/B testing is the process of comparing two variations of a page element, usually by testing users' response to variant A vs variant B, and concluding which of the two variants is more effective.
+
+
+
+
+13. Is mean imputation of missing data acceptable practice?
+Answer:- -Bad practice in general
+	 -If just estimating means: mean imputation preserves the mean of the observed data
+	 -Leads to an underestimate of the standard deviation
+	 -Distorts relationships between variables by “pulling” estimates of the c
+
+
+
+
+14. What is linear regression in statistics?
+Answer:- In statistics, linear regression is a linear approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables). ... For more than one explanatory variable, the process is called multiple linear regression.
+
+
+
+
+15. What are the various branches of statistics?
+Answer:- The two main branches of statistics are descriptive statistics and inferential statistics. Both of these are employed in scientific analysis of data and both are equally important.
+
+
+
+
